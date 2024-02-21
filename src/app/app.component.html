@@ -1,9 +1,13 @@
-
+<div class="container">
  <h4> Main Page</h4>
+ <p> Main paragraph</p>
  
- <div class="container">
+
   <app-create-server (ServerCreatedEvent) = addNewServer($event)></app-create-server>
   
   <hr>
-  <app-show-server [serverElements]="serverElements"></app-show-server>
+
+  
+  <app-show-server *ngFor = "let serverElement of serverElements"  [serverElement]="serverElement"></app-show-server>
+  
 </div>

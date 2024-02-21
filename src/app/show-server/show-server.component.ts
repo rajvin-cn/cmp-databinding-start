@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { ServerElement } from '../ModelDB/ServerElement';
 
 @Component({
@@ -8,6 +8,6 @@ import { ServerElement } from '../ModelDB/ServerElement';
 })
 export class ShowServerComponent {
 
-  @Input() serverElements:ServerElement[];
+  @Input() serverElement:ServerElement;
 
 }
